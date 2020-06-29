@@ -66,8 +66,19 @@ class Fuvarok {
         stat.forEach((value, key) => {
             console.log(`\t${ key } : ${ value } fuvar`);
           })
-
     }
+
+    _6feladat(){
+
+        var merfold = 0;
+        this.fuvarLista.forEach((f) => {
+            merfold += f.gettavolsag();
+        });        
+        var km = merfold * 1.6;
+        console.log(`6. feladat: ${ km } km`);
+    }
+
+
 
     
 
