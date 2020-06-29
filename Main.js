@@ -6,5 +6,6 @@ setTimeout(() => {
     
     f._3Feladat();
     f._4Feladat();
+    f._5feladat();
 
 }, 20);

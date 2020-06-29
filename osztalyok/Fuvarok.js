@@ -50,6 +50,25 @@ class Fuvarok {
         console.log(`4.feladat: ${ esetek.length } alatt: ${ penz }$`);
     }
 
+    _5feladat(){
+
+        let stat = new Map();
+        this.fuvarLista.forEach((fuvar) => {
+            var f = fuvar;
+            if (!stat.has(f.getfizetes_modja())){
+                stat.set(f.getfizetes_modja(), 1);
+            } else {
+                stat.set(f.getfizetes_modja(), stat.get(f.getfizetes_modja()) + 1);
+            }
+        });
+
+        console.log(`5.feladat: `);
+        stat.forEach((value, key) => {
+            console.log(`\t${ key } : ${ value } fuvar`);
+          })
+
+    }
+
     
 
 }
