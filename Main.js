@@ -8,5 +8,7 @@ setTimeout(() => {
     f._4Feladat();
     f._5feladat();
     f._6feladat();
+    f._7feladat();
+    f._8feladat();
 
 }, 20);
